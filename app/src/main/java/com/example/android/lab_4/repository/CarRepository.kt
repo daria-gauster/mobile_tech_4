@@ -7,11 +7,11 @@ import com.example.android.lab_4.data.CarDao
 class CarRepository(private val carDao: CarDao) {
     val readAllData: LiveData<List<Car>> = carDao.readAllData()
 
-    suspend fun addCar(car: Car){
+    suspend fun addCar(car: Car) {
         carDao.addCar(car)
     }
 
-    suspend fun deleteAllCars(){
+    suspend fun deleteAllCars() {
         carDao.deleteAllCars()
     }
 }
