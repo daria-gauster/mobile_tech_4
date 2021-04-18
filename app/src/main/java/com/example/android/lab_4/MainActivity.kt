@@ -36,17 +36,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun populateList() {
-        val list = ArrayList<Car>()
-
-        list.add(Car( 0, "a","0000", "https://expeditionportal.com/media/2020/01/DSCF6074-1500x1000.jpg"))
-        list.add(Car( 1, "b","1000", "https://www.autoguide.com/blog/wp-content/uploads/2018/03/international-hx620.jpg"))
-        list.add(Car( 2, "c","2000", "https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/03/ford-tonka.jpg"))
-
-        for (car in list){
-            carViewModel.addCar(car)
-            Log.d("MAIN_ADD", "added $car")
-        }
-    }
-
 }
